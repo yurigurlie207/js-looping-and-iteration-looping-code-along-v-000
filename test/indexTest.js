@@ -19,14 +19,14 @@ describe( 'index.js', () => {
     } );
   } );
 
-  describe( 'countdown()', () => {
+  describe( 'countDown()', () => {
     afterEach( () => {
       spy.restore();
     } );
 
     it( 'invokes console.log once for each number, counting down from the number provided to zero', () => {
       countDown( 10 );
-      expect( spy.callCount, "Expected countdown(10) to invoke 11 console.logs" )
+      expect( spy.callCount, "Expected countDown(10) to invoke 11 console.logs" )
         .to.eq( 11 );
     } );
 
