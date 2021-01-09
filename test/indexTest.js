@@ -19,7 +19,7 @@ describe( 'index.js', () => {
     } );
   } );
 
-  describe( 'countDown()', () => {
+  describe( 'countdown()', () => {
     afterEach( () => {
       spy.restore();
     } );
